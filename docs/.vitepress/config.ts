@@ -11,14 +11,14 @@ export default defineConfig({
   title: 'ORANGE ORM',
   description: 'Fetch rows directly in the browser. Developer friendly, concise with with powerful filtering.',
   ignoreDeadLinks: false,
-  head: [['link', { rel: 'icon', href: '/icon.svg' }]],
+  head: [['link', { rel: 'icon', href: '/orange-orm-docs/icon.svg' }]],
   lang: 'en-US',
   lastUpdated: false,
   sitemap: {
     hostname: 'https://orange-orm.io',
   },
   themeConfig: {
-    logo: '/orange-orm-docs/icon.svg',
+    logo: '/icon.svg',
     siteTitle: 'ORANGE ORM',
 
     footer: {
