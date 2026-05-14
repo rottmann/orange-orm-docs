@@ -18,7 +18,7 @@ export default defineConfig({
     hostname: 'https://orange-orm.io',
   },
   themeConfig: {
-    logo: '/icon.svg',
+    logo: '/orange-orm-docs/icon.svg',
     siteTitle: 'ORANGE ORM',
 
     footer: {
