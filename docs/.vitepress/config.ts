@@ -2,6 +2,7 @@ import fs from 'node:fs'
 import path from 'node:path'
 
 import { defineConfig } from 'vitepress'
+import llmstxt from 'vitepress-plugin-llms'
 
 const discussionIcon = fs.readFileSync(path.resolve(__dirname, '../assets/discussion.svg'), 'utf-8')
 
@@ -130,5 +131,6 @@ export default defineConfig({
         },
       },
     },
+    plugins: [llmstxt()],
   },
 })
