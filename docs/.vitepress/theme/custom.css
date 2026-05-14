@@ -1,0 +1,151 @@
+:root {
+  --vp-c-brand-1: #f7931e;
+  --vp-c-brand-2: #5ba34f;
+  --vp-c-brand-3: #fde4c7;
+  --vp-layout-max-width: 1440px;
+}
+
+/* Content size */
+.VPDoc:not(.has-sidebar) .container {
+  max-width: 1440px !important;
+}
+
+.VPDoc:not(.has-sidebar) .content {
+  max-width: 1240px !important;
+}
+
+.VPDoc .content-container {
+  max-width: 100% !important;
+}
+
+.VPContent .content {
+  padding-bottom: 32px !important;
+}
+
+/* Logo */
+.VPNavBarTitle .title {
+  color: var(--vp-c-brand-2) !important;
+}
+
+/* Headings */
+.vp-doc h1,
+.vp-doc h2,
+.vp-doc h3,
+.vp-doc h4 {
+  font-weight: 300;
+}
+
+.vp-doc h2 {
+  margin-top: 32px !important;
+}
+
+.vp-doc h1 + h2 {
+  border-top: none !important;
+  margin-top: 0 !important;
+}
+
+/* Force the vertical scroll bar  */
+html {
+  overflow-y: scroll;
+}
+
+/* Show footer */
+.VPFooter {
+  display: block !important;
+  border: none !important;
+  padding: 16px !important;
+}
+
+.VPFooter .message,
+.VPFooter .copyright {
+  font-weight: 300;
+  font-size: 0.9rem;
+  line-height: 1rem;
+}
+
+/* Badges in on line */
+.status-badge-line p {
+  display: flex;
+  gap: 4px;
+  margin: 0;
+  flex-direction: row;
+}
+
+.status-badge-line p a img {
+  display: inline-block;
+  margin: 0;
+}
+
+.VPBadge.info {
+  margin-top: 16px;
+}
+
+/* Full width table */
+.full-width-table table {
+  width: 100%;
+  display: table;
+  margin: 1.5rem 0;
+}
+.full-width-table th,
+.full-width-table td {
+  width: auto;
+}
+
+@media (max-width: 960px) {
+  .full-width-table th,
+  .full-width-table td {
+    padding: 2px 4px;
+  }
+}
+
+/* Sidebar */
+.VPSidebarItem.level-0 {
+  padding-bottom: 10px !important;
+}
+
+#VPSidebarNav .group {
+  padding-top: 8px !important;
+}
+
+.VPSidebar {
+  padding-bottom: 0 !important;
+}
+
+.VPSidebarItem.level-1 {
+  border-left: 1px solid rgb(from var(--vp-c-brand-2) r g b / 50%);
+}
+
+.VPSidebarItem.level-1 > .item > .link {
+  color: var(--vp-c-brand-1);
+  border-radius: 8px;
+  padding: 0px 12px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.VPSidebarItem.level-1.is-active > .item > .link {
+  background-color: rgb(from var(--vp-c-brand-1) r g b / 12%);
+  color: var(--vp-c-brand-1);
+}
+
+.VPSidebarItem.level-1.is-active > .item > .link::before {
+  content: "";
+  position: absolute;
+  left: -7px;
+  top: 25%;
+  height: 16px;
+  width: 7px;
+  background-image: linear-gradient(
+    to top,
+    var(--vp-c-brand-1),
+    var(--vp-c-brand-3)
+  );
+  border-radius: 100px 0 0 100px;
+}
+
+.VPSidebarItem .link:hover {
+  background-color: rgb(from var(--vp-c-brand-1) r g b / 12%);
+  color: var(--vp-c-brand-1);
+}
