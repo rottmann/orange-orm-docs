@@ -7,6 +7,7 @@ const discussionIcon = fs.readFileSync(path.resolve(__dirname, '../assets/discus
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  base: '/orange-orm-docs/',
   title: 'ORANGE ORM',
   description: 'Fetch rows directly in the browser. Developer friendly, concise with with powerful filtering.',
   ignoreDeadLinks: false,
